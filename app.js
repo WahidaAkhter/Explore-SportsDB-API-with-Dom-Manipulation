@@ -31,6 +31,14 @@ const details = (id) => {
         .then((data) => setDetails(data.players[0]));
 };
 const setDetails = (info) => {
+    if (info.strGender == "male") {
+        document.getElementById("male").style.display = "block ";
+        document.getElementById("female").style.display = "none ";
+    }
+    else {
+        document.getElementById("male").style.display = "none ";
+        document.getElementById("female").style.display = "block ";
+    }
     document.getElementById("details-container").innerHTML = `
     <div>
     <img src="" alt="">
