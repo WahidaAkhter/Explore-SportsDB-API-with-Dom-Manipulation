@@ -21,17 +21,28 @@
         <div class="row w-100 m-auto">
             <div class="col-md-6 w-100 m-auto text-center">
                 <h1>left side</h1>
-                <div class="input-group">
+                <div class="input-group mb-3">
                     <input type="search" id="search-box" class="form-control rounded" placeholder="Search"
                         aria-label="Search" aria-describedby="search-addon" />
                     <button type="button" onclick="allPlayers()" id="search-btn"
                         class="btn btn-outline-primary">search</button>
                 </div>
+                <div id="player-container" class="player-container">
+
+                </div>
             </div>
+
             <div class="col-md-6 w-100 m-auto text-center">
                 <h1>
                     right side
                 </h1>
+                <div id="details-container" class="details-container">
+                    <div class="image-container w-50">
+                        <img class="w-50" src="male-icon-32.png" alt="">
+                        <img class="w-50" src="female.png" alt="">
+                    </div>
+
+                </div>
             </div>
         </div>
     </div>
